@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Dancing+Script&family=Pacifico&display=swap');
+
+/*de google fonts*/
+body {
+    font-family: "Advent Pro, sans-serif";
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    /*padding c'est le le surface de remplissage qui entoure l'element  puis le border puis le margin*/
+
+}
+
+li {
+    list-style-type: none;
+    /*permet de definir l'apparence de l'element de liste */
+}
+
+h2 {
+    text-transform: uppercase;
+    /*on transforme le titre en majuscule*/
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    /*le couleur du lien */
+    color: black;
+}
+
+/* *********************NavBar******************************************************* */
+nav {
+    overflow: hidden;
+    /*overflow permet de gérer le depasemnt d'un bloc et contenu */
+    background-color: #fffAE1;
+    position: fixed;
+    /*elle est en haut et fixe*/
+    width: 100%;
+    opacity: 0.9;
+    /*l'opacité qui varie de 0 a 1*/
+}
+
+header li {
+    float: right;
+    font-size: 1.2em;
+}
+
+header li a {
+    text-decoration: none;
+    display: block;
+    /*en block*/
+    text-align: center;
+    padding: 18px 16px;
+}
+
+#logo {
+    font-family: "Dancing Script";
+    font-weight: bold;
+    float: left;
+}
+
+/* ****************image principale******************************** */
+
+#imagePrincipale {
+    padding-top: 60px;
+    background: url(media/image-principale.JPG) no-repeat fixed;
+    /*ne se repéte pas et centré 50% 50% */
+    background-size: cover;
+    height: 800px;
+}
+
+h1 {
+    /*le titre de site web*/
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 6em;
+    margin-top: 110px;
+    text-shadow: 1px 3px 2px black;
+}
+
+#premierTrait {
+    height: 4px;
+    width: 25%;
+    margin: -3px auto;
+    background-color: #fffAE1;
+    text-shadow: 1px 3px 2px;
+}
+
+h3 {
+    text-align: center;
+    color: antiquewhite;
+    font-size: 3em;
+    text-shadow: 1px 3px 2px black;
+}
+
+/* *********************************présentation **************************** */
+#présentation {
+    background-color: #fffAE1;
+    padding: 10px 0px;
+}
+
+#textIntro {
+    padding: 0px 20px;
+}
+
+#prestations {
+    display: flex;
+    /*le display est sous forme flexible */
+    flex-wrap: wrap;
+    /* les images sont présentés sur +sieurs lignes*/
+    justify-content: space-between;
+    /*avoir un espace entre les images*/
+    padding: 30px 10%;
+}
+
+#imagePrestations,
+h4 {
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    font-size: 1.5em;
+    /* l'epaisseur des lettres*/
+    margin: 15px;
+    font-weight: 300;
+    /*definit la degrée de graisse de lettre */
+}
+
+.imagePrestations,
+img {
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.imagePrestations,
+img:hover {
+    /*hover c'est qu'on survole de la souris sur img */
+    transform: scale(1.05);
+    /*transforme scale definit que l'image va aggrandit a l'echelle */
+    opacity: 0.5;
+    transition: 0.5s ease-in-out;
+    /*transition permet de transmettre l'image en avant */
+}
+
+/* *****************************tourisme *********************************** */
+#tourisme {
+    height: 1400px;
+    background-color: #f1f2f6;
+    padding: 1px 2%;
+}
+
+#tourisme h2 {
+    padding-top: 60px;
+}
+
+
+#ocean {
+    background: url(media/ocean.jpg);
+}
+
+#chateau {
+    background: url(media/chateau.jpg);
+}
+
+#vignoble {
+    background: url(media/vignes.jpg);
+}
+
+#pahre {
+    background: url(media/phare.jpg);
+}
+
+#tourisme li {
+    margin: 65px 100px 0 100px;
+    height: 226px;
+    /*height c'est largeur et width c'est longueur*/
+    width: 55%;
+    /* il faut mettre les largeur en px et les longueyr en pourcentage quand c'st possible */
+    max-width: 550px;
+    float: left;
+    box-shadow: 6px 6px 28px -1px rgba(0, 0, 0, 0.75);
+}
+
+#tourisme p {
+    height: 45px;
+    width: 235px;
+    background-color: #01DF74;
+    float: right;
+    margin: 50px -180px 0 0;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 15px;
+    box-shadow: 4px 4px 0 1px rgba(90, 161, 43, 1);
+    /*rgba représente couleur et opacité */
+}
+
+#tourisme #chateau,
+#tourisme #phare {
+    float: right;
+    /*permet a mettre limage en droit de l'ecran */
+}
+
+#chateau p,
+#phare p {
+    float: left;
+    /*mettre paragraphe a gauche de photo */
+    background-color: cyan;
+    margin-left: -180px;
+    /*position de p est -180 a gauche de l'image */
+    box-shadow: -4px 4px 0 1px rgba(15, 154, 156, 1);
+}
+
+/* *********************************Footer***************************************************** */
+
+footer {
+    background-color: #524A3A;
+    color: #fffAE1;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+
+Forme {
+    margin: 0 auto;
+    max-width: 900px;
+    /* quant le site s'agrandit la page respecte un longueur maximale de 900px */
+}
+
+input,
+textarea,
+button {
+    border: none;
+    width: 55%;
+    padding: 15px 10px;
+    margin: 1px 0px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    font-size: 1.5em;
+    background-color: #fffAE1;
+}
+
+button:hover {
+    background-color: #e55039;
+    color: #fffAE1;
+    cursor: progress;
+    transition: 0.3 ease-in-out;
+}
+
+#deuxiemeTrait {
+    height: 1px;
+    width: 75%;
+    background-color: #fffAE1;
+    margin: 60px auto;
+}
+
+#copyrightEtIcons {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 10%;
+}
+
+#copyright {
+    width: 50%;
+    text-align: left;
+    color: #fffAE1;
+}
+
+#icons {
+    width: 50%;
+    text-align: right;
+}
+
+#icons a {
+    display: inline-block;
+    /*ca veut dire sur une seule ligne */
+    margin: 0 15px;
+    font-size: 1.3em;
+    color: #fffAE1;
+}
+
+#icons a:hover {
+    transform: scale(1.5);
+    transition: 0.1s;
+}
